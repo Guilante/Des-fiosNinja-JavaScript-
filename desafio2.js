@@ -29,7 +29,7 @@ adicionaValor()
 
 // Qual o retorno da função? (Use comentários de bloco).
 
-//O valor da Variável agora é 10
+/* O valor da Variável agora é 10 */
 
 /*
 Crie uma função com as seguintes características:
@@ -39,11 +39,11 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function tres(a,b,c){
-	if (a == null || b == null || c == null) {
+	if (a == undefined || b == undefined || c == undefined) {
 		return ' Preencha todos os valores corretamente!'; 
 	}
 	else{
-		return (a * b) + c
+		return (a * b * c) + 2;
 	}
 }
 
@@ -61,7 +61,7 @@ tres(2,2,10)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 	
-//14
+//42
 
 /*
 Crie uma função com as seguintes características:
