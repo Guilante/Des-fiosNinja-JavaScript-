@@ -75,16 +75,16 @@ Crie uma função com as seguintes características:
 
 
 function argumento(x,y,z){
-	if (x != null && y == null && z == null) {
+	if (x != undefined && y == undefined && z == undefined) {
 		return  x; 
 	}	
-	else if (x != null && y != null && z == null) {
+	else if (x != undefined && y != undefined && z == undefined) {
 		return  (x + y);
 	} 	
-	else if (x != null && y != null && z != null){
+	else if (x != undefined && y != undefined && z != undefined){
 		return  ((x+y)/z);
 	}
-	else{
+	else if (x == undefined && y == undefined && z == undefined) {
 		return false;
 	}
 		return null;	
@@ -95,18 +95,17 @@ function argumento(x,y,z){
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 
 
-/*
 
-argumento()
-false
 
-argumento(1)
-1
+//argumento()
+//false
 
-argumento(2,2)
-4
+//argumento(1)
+//1
 
-argumento(2,2,2)
-2
+//argumento(2,2)
+//4
 
-*/
+//argumento(2,2,2)
+//2
+
