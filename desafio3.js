@@ -212,12 +212,15 @@ pessoa.apresentacao = function() {
 	if (pessoa.sexo == 'Feminino') {
 		var sexo = 'a';
 	}
-	else if (pessoa.idade == 1){
+
+	if (pessoa.idade == 1){
 		var idade = 'ano';
 	}
-	else if (pessoa.caminhouQuantosMetros == 1){
+
+	if (pessoa.caminhouQuantosMetros == 1){
 		var andou = 'metro'
 	}
+
 	return  'Olá eu sou ' + sexo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + idade +', ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + andou + '!'; 
 
 
